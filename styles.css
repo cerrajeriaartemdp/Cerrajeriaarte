@@ -54,3 +54,24 @@ header{min-height:88px!important}
 #servicios .service-card>img{display:block;width:100%;height:300px;object-fit:cover;border-radius:14px}
 #servicios .service-card>div{padding:18px 6px 8px}
 @media(max-width:600px){#servicios .service-card{padding:14px}#servicios .service-card>img{height:240px}}
+
+/* Asesoramiento e instalación: diseño premium */
+.consultation{background:radial-gradient(ellipse at 90% 10%,#20372b 0%,#141a17 48%,#101613 100%);padding:95px 0}
+.consultation .consultation-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(32px,6vw,84px);align-items:center}
+.consultation-photo{position:relative;min-width:0}
+.consultation .consultation-photo img{height:570px;width:100%;object-fit:cover;border-radius:22px;box-shadow:0 25px 60px #0007}
+.consultation-photo-tag{position:absolute;left:18px;bottom:18px;background:#101a15e8;color:#c5efd2;padding:11px 15px;border:1px solid #ffffff30;border-radius:10px;font-size:10px;font-weight:800;letter-spacing:.1em}
+.consultation-content h2{font-size:clamp(32px,3.5vw,50px);margin:14px 0 18px;line-height:1.12}
+.consultation-content h2 em{color:#9be3b5}
+.consultation .consultation-lead{font-size:16px;color:#cad8cf;line-height:1.75;margin-bottom:25px}
+.consultation-steps{border-top:1px solid #ffffff25}
+.consultation-step{display:flex;gap:18px;padding:18px 0;border-bottom:1px solid #ffffff25}
+.consultation-step .step-number{color:#89d6a5;font-weight:800;font-size:14px;letter-spacing:.1em;padding-top:3px}
+.consultation-step h3{font-size:17px;letter-spacing:-.02em;margin:0 0 5px}
+.consultation .consultation-step p{font-size:13px;line-height:1.55;color:#bdccc2;margin:0}
+.consultation-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:20px}
+.consultation-actions .btn{margin:0}
+.consultation-secondary{font-size:13px;font-weight:800;color:#b6ebc8;padding:12px 2px}
+.consultation .consultation-guarantee{font-size:12px;color:#9dc9ab;margin:13px 0 0}
+@media(max-width:800px){.consultation{padding:65px 0}.consultation .consultation-grid{grid-template-columns:1fr;gap:35px}.consultation .consultation-photo img{height:340px}.consultation-content h2{font-size:clamp(30px,7vw,42px)}}
+@media(max-width:480px){.consultation .consultation-photo img{height:270px}.consultation-photo-tag{font-size:9px;left:10px;bottom:10px}.consultation-actions .btn{width:100%;text-align:center}}
