@@ -120,3 +120,8 @@ header{min-height:88px!important}
 .reviews-disclaimer{font-size:11px;color:#7c8c80;margin:0}
 @media(max-width:900px){.reviews-premium .track .review-card{flex-basis:calc((100% - 17px)/2)}}
 @media(max-width:640px){.reviews-premium{padding:65px 0}.reviews-head{grid-template-columns:1fr;gap:24px}.reviews-score{align-items:flex-start;max-width:260px}.reviews-premium .track .review-card{flex-basis:88%;min-height:245px}.reviews-head h2{font-size:clamp(30px,8vw,42px)}}
+
+/* Widget de reseñas actualizado automáticamente */
+.google-reviews-widget{margin-top:26px;min-height:240px}
+.reviews-premium .reviews-head{display:block;margin-bottom:20px}
+.reviews-premium .reviews-head p{max-width:720px}
