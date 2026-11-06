@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const t=document.querySelector(".track");document.querySelectorAll(".arrows button").forEach(b=>b.addEventListener("click",()=>{if(t){const c=t.querySelector("blockquote");t.scrollBy({left:Number(b.dataset.dir)*(c.getBoundingClientRect().width+16),behavior:"smooth"})}}))});
