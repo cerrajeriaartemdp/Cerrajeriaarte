@@ -26,3 +26,10 @@ header .logo-brand img{width:255px!important;min-width:0!important;max-width:100
 header{min-height:132px!important}
 @media(max-width:1120px){header .logo-brand{flex:0 0 auto!important;width:290px!important;max-width:90vw!important;height:128px!important}header .logo-brand img{width:290px!important;max-height:126px!important;transform:none!important}}
 @media(max-width:600px){header .logo-brand{width:290px!important;max-width:92vw!important;height:130px!important}header .logo-brand img{width:290px!important;max-height:128px!important;transform:none!important}}
+
+/* Ajuste intermedio del logo recortado */
+header .logo-brand{flex:0 0 205px!important;width:205px!important;max-width:205px!important;height:90px!important}
+header .logo-brand img{width:205px!important;max-width:205px!important;height:auto!important;max-height:88px!important;transform:none!important}
+header{min-height:108px!important}
+@media(max-width:1120px){header .logo-brand{flex:0 0 auto!important;width:235px!important;max-width:90vw!important;height:104px!important}header .logo-brand img{width:235px!important;max-width:235px!important;max-height:102px!important}}
+@media(max-width:600px){header .logo-brand{width:235px!important;max-width:90vw!important;height:104px!important}header .logo-brand img{width:235px!important;max-width:235px!important;max-height:102px!important}}
