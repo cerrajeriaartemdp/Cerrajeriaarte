@@ -125,3 +125,30 @@ header{min-height:88px!important}
 .google-reviews-widget{margin-top:26px;min-height:240px}
 .reviews-premium .reviews-head{display:block;margin-bottom:20px}
 .reviews-premium .reviews-head p{max-width:720px}
+
+/* Servicios: tarjetas premium */
+.services-premium{padding-top:100px;padding-bottom:105px}
+.services-heading{text-align:center;max-width:770px;margin:0 auto 42px}
+.services-heading h2{margin:12px 0 16px}
+.services-heading h2 em{color:#16864d}
+.services-heading p{color:#6b7a70;margin:0 auto;max-width:650px}
+.services-premium .services-grid{gap:24px;align-items:stretch}
+.services-premium .service-card-premium{position:relative;display:flex;flex-direction:column;background:#f3f7f4;border:1px solid #e0e9e2;border-radius:23px;padding:27px;overflow:hidden;text-align:left;transition:transform .3s,box-shadow .3s}
+.services-premium .service-card-premium:hover{transform:translateY(-5px);box-shadow:0 22px 42px #14291a18}
+.service-topline{display:flex;justify-content:space-between;align-items:center;margin-bottom:17px}
+.service-number{font-size:10px;font-weight:800;letter-spacing:.15em;color:#46815a}
+.service-icon{display:grid;place-items:center;width:38px;height:38px;border:1px solid #cddfd2;border-radius:50%;font-size:20px;color:#24864b}
+.services-premium .service-card-title{font-size:clamp(28px,3.2vw,40px);margin:0 0 6px;line-height:1.1;letter-spacing:-.05em}
+.services-premium .service-card-title em{color:#208b51}
+.services-premium .service-subtitle{font-size:13px;color:#6c7c70;margin:0 0 20px}
+.services-premium .service-image{position:relative;padding:0;background:#e9f0eb;border-radius:16px;overflow:hidden}
+.services-premium .service-image img{width:100%;max-width:none;height:260px;object-fit:contain;margin:0;border-radius:0;transition:transform .35s}
+.services-premium .service-card-premium:hover .service-image img{transform:scale(1.04)}
+.services-premium .service-bottom{display:flex;flex-direction:column;flex:1;padding:19px 0 0}
+.services-premium .service-bottom>p{font-size:14px;line-height:1.65;color:#526458;margin:0 0 15px}
+.service-features{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:22px}
+.service-features span{font-size:10px;font-weight:800;color:#3e7150;background:#e3efe6;border:1px solid #d4e5d8;border-radius:30px;padding:7px 10px}
+.services-premium .service-link{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding:15px 18px;background:#15271c;color:#fff;font-size:13px;font-weight:800;border-radius:11px;transition:background .2s}
+.services-premium .service-link:hover{background:#238b50}
+.services-premium .service-link span{font-size:21px}
+@media(max-width:650px){.services-premium{padding-top:65px;padding-bottom:65px}.services-heading{margin-bottom:28px}.services-premium .services-grid{gap:16px}.services-premium .service-card-premium{padding:20px;border-radius:18px}.services-premium .service-image img{height:220px}}
