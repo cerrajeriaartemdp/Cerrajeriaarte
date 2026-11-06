@@ -47,3 +47,10 @@ header .logo-brand img{width:148px!important;max-width:148px!important;height:au
 header{min-height:88px!important}
 @media(max-width:1120px){header .logo-brand{flex:0 0 auto!important;width:172px!important;max-width:90vw!important;height:78px!important}header .logo-brand img{width:172px!important;max-width:172px!important;max-height:76px!important}}
 @media(max-width:600px){header .logo-brand{width:172px!important;max-width:90vw!important;height:78px!important}header .logo-brand img{width:172px!important;max-width:172px!important;max-height:76px!important}}
+
+/* Tarjetas de servicios: título arriba y esquinas redondeadas */
+#servicios .service-card{overflow:hidden;border-radius:16px;padding:18px;background:#f5f7f6}
+#servicios .service-card-title{margin:0 0 16px;font-size:clamp(20px,2.2vw,26px);line-height:1.25}
+#servicios .service-card>img{display:block;width:100%;height:300px;object-fit:cover;border-radius:14px}
+#servicios .service-card>div{padding:18px 6px 8px}
+@media(max-width:600px){#servicios .service-card{padding:14px}#servicios .service-card>img{height:240px}}
