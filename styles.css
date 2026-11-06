@@ -75,3 +75,22 @@ header{min-height:88px!important}
 .consultation .consultation-guarantee{font-size:12px;color:#9dc9ab;margin:13px 0 0}
 @media(max-width:800px){.consultation{padding:65px 0}.consultation .consultation-grid{grid-template-columns:1fr;gap:35px}.consultation .consultation-photo img{height:340px}.consultation-content h2{font-size:clamp(30px,7vw,42px)}}
 @media(max-width:480px){.consultation .consultation-photo img{height:270px}.consultation-photo-tag{font-size:9px;left:10px;bottom:10px}.consultation-actions .btn{width:100%;text-align:center}}
+
+/* Galería de trabajos reales */
+.works-section{padding-top:90px;padding-bottom:95px}
+.works-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:30px}
+.works-heading h2{max-width:690px;margin:10px 0 14px}
+.works-heading p{color:#65736b;max-width:650px;margin:0}
+.works-heading-mark{font-size:10px;letter-spacing:.14em;font-weight:800;color:#6b8c77;white-space:nowrap;margin-bottom:5px}
+.works-section .works-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.works-gallery .work-card{position:relative;display:block;overflow:hidden;border-radius:18px;aspect-ratio:4/4.5;background:#1c2922;isolation:isolate;box-shadow:0 10px 30px #14271a12}
+.works-gallery .work-card img{display:block;width:100%;height:100%;object-fit:cover;border-radius:0;transition:transform .45s ease,filter .3s ease}
+.works-gallery .work-card:hover img{transform:scale(1.055);filter:brightness(.86)}
+.work-card-overlay{position:absolute;inset:auto 0 0;padding:48px 19px 18px;background:linear-gradient(transparent,#09120bd9);color:white;display:flex;justify-content:space-between;align-items:end;gap:10px}
+.work-card-overlay>span{font-size:10px;font-weight:800;letter-spacing:.12em;color:#b4ebc8}
+.work-card-overlay strong{font-size:12px;white-space:nowrap}
+.works-footer{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:23px 0 0;flex-wrap:wrap}
+.works-footer p{margin:0;font-weight:700}
+.works-footer .btn{margin:0}
+@media(max-width:800px){.works-section .works-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.works-heading-mark{display:none}}
+@media(max-width:480px){.works-section{padding-top:65px;padding-bottom:65px}.works-gallery .work-card{border-radius:13px;aspect-ratio:3/4}.work-card-overlay{padding:38px 10px 12px;display:block}.work-card-overlay>span{display:block;font-size:8px}.work-card-overlay strong{font-size:10px}.works-footer .btn{width:100%;text-align:center}}
