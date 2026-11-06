@@ -1,0 +1,1 @@
+Sitio web Cerrajería Arte. HTML/CSS/JS. Publicación: GitHub Settings > Pages > Deploy from branch > main / root. Las imágenes enlazan a la biblioteca WordPress existente.
