@@ -186,3 +186,22 @@ footer{padding:35px 16px}.footer-logo{max-width:145px}
 .catalog-install{grid-template-columns:minmax(0,1fr);padding:18px;gap:20px}.catalog-install img{height:240px}
 }
 @media(max-width:380px){header .main-nav{gap:3px 10px;font-size:9px}.wrap{width:calc(100% - 26px)}.services-premium .service-card-premium{padding:15px}.works-gallery .work-card-overlay{padding:26px 7px 8px}.works-gallery .work-card-overlay strong{font-size:9px}.product img{height:125px}.floating-wa span{display:none}}
+
+/* Menú móvil compacto y accesible */
+.mobile-menu-toggle{display:none}
+@media(max-width:767px){
+header{min-height:76px!important;display:grid!important;grid-template-columns:1fr auto!important;gap:12px!important;align-items:center!important;text-align:left!important;padding:10px 18px!important}
+header .logo-brand{grid-column:1!important;grid-row:1!important;justify-self:start!important;margin:0!important;width:145px!important;max-width:145px!important;height:60px!important;flex:none!important}
+header .logo-brand img{width:145px!important;max-width:145px!important;max-height:60px!important;margin:0!important;object-position:left center!important}
+.mobile-menu-toggle{grid-column:2;grid-row:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:44px;height:44px;border:1px solid #425347;background:#1d2922;color:white;border-radius:11px;cursor:pointer}
+.mobile-menu-toggle span{width:20px;height:2px;background:#e9f5eb;border-radius:4px;transition:transform .2s,opacity .2s}
+.mobile-menu-toggle[aria-expanded=true] span:first-child{transform:translateY(7px) rotate(45deg)}
+.mobile-menu-toggle[aria-expanded=true] span:nth-child(2){opacity:0}
+.mobile-menu-toggle[aria-expanded=true] span:last-child{transform:translateY(-7px) rotate(-45deg)}
+header .main-nav{grid-column:1/-1;grid-row:2;display:none!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important;gap:0!important;width:100%!important;margin:0!important;padding:8px 0 6px!important;border-top:1px solid #36443b;font-size:13px!important;text-align:left!important}
+header .main-nav.is-open{display:flex!important}
+header .main-nav>a,header .main-nav .nav-parent{display:flex!important;width:100%!important;min-height:45px!important;align-items:center!important;padding:12px 8px!important;white-space:normal!important;line-height:1.4!important;border-bottom:1px solid #ffffff18}
+header .nav-dropdown{width:100%!important;max-width:100%!important}
+header .nav-dropdown .submenu{position:static!important;display:block!important;visibility:visible!important;opacity:1!important;transform:none!important;box-shadow:none!important;background:#1b2820!important;border:0!important;padding:0 0 4px 14px!important;max-width:100%!important;width:100%!important}
+header .nav-dropdown .submenu a{display:block!important;color:#c4d9c9!important;font-size:12px!important;padding:9px 10px!important;line-height:1.4!important}
+}
