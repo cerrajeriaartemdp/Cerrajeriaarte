@@ -331,3 +331,20 @@ body .products>.product{box-sizing:border-box;flex:0 0 calc((100% - 32px)/3)!imp
 body .products>.product img{height:245px!important;object-fit:contain!important}
 @media(max-width:767px){.products-heading{align-items:end!important;gap:8px!important}.products-heading h2{font-size:clamp(29px,8vw,39px)!important}.products-heading p{font-size:12px!important}.products-controls{gap:6px!important}.products-arrow{width:35px;height:35px;border-radius:10px;font-size:25px}body .products{gap:11px!important;padding-bottom:15px!important}body .products>.product{flex:0 0 calc((100% - 11px)/2)!important}body .products>.product img{height:175px!important}body .products>.product div{padding:12px!important}}
 @media(max-width:380px){body .products>.product img{height:150px!important}}
+
+/* Asesoramiento: encabezado tipo banner encima de la foto en móvil */
+.consultation-intro{display:none}
+.consultation-other-purchase{margin:15px 0 22px;padding:14px 17px;border-left:3px solid #51a76a;background:#eaf4ec;border-radius:0 10px 10px 0;line-height:1.5}
+@media(max-width:767px){
+body .consultation .consultation-grid{display:flex!important;flex-direction:column!important;gap:0!important}
+body .consultation .consultation-intro{display:block!important;order:0!important;padding:28px 22px 25px!important;border-radius:17px 17px 0 0!important;background:linear-gradient(145deg,#11291d,#214e34)!important;color:#fff!important}
+body .consultation .consultation-intro .eyebrow{display:block!important;color:#a8e8b9!important;font-size:10px!important;letter-spacing:.12em!important;margin-bottom:11px!important}
+body .consultation .consultation-intro h2{font-size:clamp(29px,8vw,38px)!important;line-height:1.1!important;letter-spacing:-.04em!important;margin:0 0 14px!important;color:#fff!important}
+body .consultation .consultation-intro h2 em{color:#a8e8b9!important}
+body .consultation .consultation-intro p{font-size:13px!important;line-height:1.55!important;color:#e3efe7!important;margin:0!important}
+body .consultation .consultation-intro .consultation-own-lock{margin-top:17px!important;padding-top:14px!important;border-top:1px solid #ffffff30!important;color:#d4e9db!important}
+body .consultation .consultation-intro .consultation-own-lock strong{color:#fff!important}
+body .consultation .consultation-photo{order:1!important;border-radius:0 0 16px 16px!important;overflow:hidden!important}
+body .consultation .consultation-content{order:2!important;padding-top:23px!important}
+body .consultation .consultation-content>.eyebrow,body .consultation .consultation-content>h2,body .consultation .consultation-content>.consultation-lead,body .consultation .consultation-content>.consultation-other-purchase{display:none!important}
+}
