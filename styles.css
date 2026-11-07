@@ -362,3 +362,15 @@ body .consultation .consultation-content>.eyebrow,body .consultation .consultati
 body .works-section .works-gallery{display:flex!important;grid-template-columns:none!important;gap:16px!important;margin:20px 0 0!important;padding:4px 2px 16px!important;overflow-x:auto!important;overflow-y:hidden!important;scroll-snap-type:x mandatory!important;scroll-behavior:smooth!important;overscroll-behavior-x:contain!important;scrollbar-width:thin;scrollbar-color:#5c8d6b transparent}
 body .works-gallery>.work-card{box-sizing:border-box;flex:0 0 calc((100% - 32px)/3)!important;min-width:0!important;scroll-snap-align:start!important;aspect-ratio:3/4!important;border-radius:17px!important}
 @media(max-width:767px){.works-arrow{width:35px;height:35px;border-radius:10px;font-size:25px}body .works-section .works-gallery{gap:11px!important}body .works-gallery>.work-card{flex:0 0 calc((100% - 11px)/2)!important;aspect-ratio:3/4!important}.works-heading{align-items:flex-end!important}.works-controls{align-self:flex-end!important}}
+
+/* Mobile stability and accessibility audit 2026-11-07 */
+@media(max-width:767px){
+  html,body{max-width:100%;overflow-x:clip}
+  img,video,iframe{max-width:100%}
+  .products,.works-gallery,.reviews-native-track{-webkit-overflow-scrolling:touch}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .products,.works-gallery,.reviews-native-track{scroll-behavior:auto!important}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
