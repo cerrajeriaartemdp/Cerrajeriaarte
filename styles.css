@@ -302,3 +302,15 @@ body .services-premium .service-features span{font-size:9px!important;line-heigh
 body .services-premium .service-link{min-height:46px!important;border:1px solid #315c41!important;background:linear-gradient(120deg,#193b29,#256b43)!important;border-radius:11px!important;box-shadow:0 5px 12px #14291a1b!important;padding:8px 8px 8px 10px!important;font-size:10px!important;gap:5px!important}
 body .services-premium .service-link span{width:25px!important;height:25px!important;min-width:25px!important;display:grid!important;place-items:center!important;border-radius:50%!important;background:#ffffff24!important;border:1px solid #ffffff35!important;font-size:15px!important}
 }
+
+/* Servicios: acciones elegantes sin etiquetas decorativas */
+.services-premium .service-features{display:none!important}
+.services-premium .service-link{position:relative;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:54px;padding:12px 13px 12px 18px;border:1px solid #356a4c;border-radius:15px;background:#173b2a;color:#fff;box-shadow:0 9px 20px rgba(15,54,32,.17);font-weight:800;letter-spacing:0;transition:background .2s,transform .2s,box-shadow .2s}
+.services-premium .service-link:hover{background:#20583a;transform:translateY(-2px);box-shadow:0 13px 24px rgba(15,54,32,.22)}
+.services-premium .service-link span{display:grid;place-items:center;flex:none;width:34px;height:34px;border-radius:11px;background:#d4f6df;color:#174b30;border:0;font-size:20px;line-height:1}
+@media(max-width:767px){
+body .services-premium .service-features{display:none!important}
+body .services-premium .service-bottom>p{margin-bottom:16px!important}
+body .services-premium .service-link{min-height:50px!important;padding:9px 8px 9px 11px!important;border:1px solid #356a4c!important;border-radius:12px!important;background:#173b2a!important;box-shadow:0 7px 16px rgba(15,54,32,.17)!important;font-size:10px!important;line-height:1.3!important;letter-spacing:0!important}
+body .services-premium .service-link span{display:grid!important;place-items:center!important;width:27px!important;height:27px!important;min-width:27px!important;border-radius:9px!important;background:#d4f6df!important;color:#174b30!important;border:0!important;font-size:17px!important}
+}
