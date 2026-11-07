@@ -267,3 +267,27 @@ body .hero .btn{box-sizing:border-box!important;display:inline-flex!important;al
 body .hero .hero-proof{max-width:290px!important;margin:13px 0 0!important;font-size:10px!important;line-height:1.4!important;text-align:left!important}
 }
 @media(max-width:390px){body .hero{height:470px!important;min-height:470px!important;background-position:73% center!important}body .hero h1{font-size:31px!important;max-width:270px!important}}
+
+/* Servicios mobile editorial: dos imágenes en paralelo */
+@media(max-width:767px){
+body .services-premium{padding-top:56px!important;padding-bottom:62px!important}
+body .services-heading{text-align:left!important;margin:0 0 24px!important}
+body .services-heading .eyebrow{font-size:10px!important;letter-spacing:.13em!important}
+body .services-heading h2{font-size:clamp(30px,8.5vw,39px)!important;line-height:1.06!important;letter-spacing:-.04em!important;margin:10px 0 12px!important}
+body .services-heading p{font-size:13px!important;line-height:1.55!important;margin:0!important;max-width:340px!important}
+body .services-premium .services-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:11px!important;align-items:stretch!important}
+body .services-premium .service-card-premium{display:flex!important;flex-direction:column!important;min-width:0!important;padding:9px!important;border:1px solid #dce8df!important;border-radius:16px!important;background:#f5f8f5!important;box-shadow:0 8px 22px #11271a0c!important;transform:none!important}
+body .services-premium .service-topline{order:0!important;margin:1px 2px 9px!important;min-height:17px!important}
+body .services-premium .service-number{font-size:8px!important;letter-spacing:.05em!important;line-height:1.2!important}
+body .services-premium .service-icon{display:none!important}
+body .services-premium .service-image{order:1!important;overflow:hidden!important;border-radius:11px!important;background:#e5eee7!important;aspect-ratio:1/1.15!important;flex:none!important}
+body .services-premium .service-image img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;border-radius:0!important}
+body .services-premium .service-card-title{order:2!important;font-size:clamp(16px,4.35vw,21px)!important;line-height:1.13!important;letter-spacing:-.04em!important;margin:13px 3px 7px!important;overflow-wrap:break-word!important}
+body .services-premium .service-subtitle{display:none!important}
+body .services-premium .service-bottom{order:3!important;display:flex!important;flex:1!important;flex-direction:column!important;padding:0 3px 3px!important}
+body .services-premium .service-bottom>p{font-size:11px!important;line-height:1.45!important;color:#5b6e60!important;margin:0 0 12px!important}
+body .services-premium .service-features{display:none!important}
+body .services-premium .service-link{display:flex!important;justify-content:space-between!important;align-items:center!important;gap:5px!important;margin-top:auto!important;padding:11px 9px!important;min-height:45px!important;border-radius:9px!important;background:#193b29!important;color:white!important;font-size:10px!important;line-height:1.25!important;font-weight:750!important;text-align:left!important}
+body .services-premium .service-link span{font-size:16px!important;flex:none!important}
+}
+@media(max-width:380px){body .services-premium .services-grid{gap:8px!important}body .services-premium .service-card-premium{padding:7px!important}body .services-premium .service-card-title{font-size:16px!important}body .services-premium .service-link{font-size:9px!important;padding:9px 7px!important}}
