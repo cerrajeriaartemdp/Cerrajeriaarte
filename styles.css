@@ -319,3 +319,15 @@ body .services-premium .service-link span{display:grid!important;place-items:cen
 .services-premium .service-link{justify-content:center!important;text-align:center!important;padding:13px 16px!important}
 .services-premium .service-link span{display:none!important}
 @media(max-width:767px){body .services-premium .service-link{justify-content:center!important;text-align:center!important;padding:11px 9px!important}body .services-premium .service-link span{display:none!important}}
+
+/* Carrusel de modelos: tres visibles, resto deslizable */
+.products-heading{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:23px}
+.products-heading h2{margin:8px 0 9px}.products-heading p{margin:0;color:#b7c9bd;font-size:14px}
+.products-controls{display:flex;gap:9px;flex:none}
+.products-arrow{display:grid;place-items:center;width:43px;height:43px;border:1px solid #496455;border-radius:12px;background:#243b2e;color:#fff;font-size:30px;line-height:1;cursor:pointer;transition:background .2s,transform .2s}
+.products-arrow:hover{background:#2f6946;transform:translateY(-1px)}
+body .products{display:flex!important;grid-template-columns:none!important;gap:16px!important;margin:0!important;padding:5px 2px 17px!important;overflow-x:auto!important;overflow-y:hidden!important;scroll-snap-type:x mandatory!important;scroll-behavior:smooth!important;overscroll-behavior-x:contain!important;scrollbar-width:thin;scrollbar-color:#5c8d6b transparent}
+body .products>.product{box-sizing:border-box;flex:0 0 calc((100% - 32px)/3)!important;min-width:0!important;scroll-snap-align:start!important;border-radius:17px!important}
+body .products>.product img{height:245px!important;object-fit:contain!important}
+@media(max-width:767px){.products-heading{align-items:end!important;gap:8px!important}.products-heading h2{font-size:clamp(29px,8vw,39px)!important}.products-heading p{font-size:12px!important}.products-controls{gap:6px!important}.products-arrow{width:35px;height:35px;border-radius:10px;font-size:25px}body .products{gap:11px!important;padding-bottom:15px!important}body .products>.product{flex:0 0 calc((100% - 11px)/2)!important}body .products>.product img{height:175px!important}body .products>.product div{padding:12px!important}}
+@media(max-width:380px){body .products>.product img{height:150px!important}}
