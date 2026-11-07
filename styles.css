@@ -270,3 +270,7 @@ body .hero .hero-proof{font-size:11px!important;line-height:1.5!important;margin
 
 /* Ajuste sutil del encuadre: conservar banner móvil anterior */
 @media(max-width:767px){body .hero{background-position:70% top!important}}
+
+/* Banner móvil compacto: texto más arriba, imagen sin ampliación extra */
+@media(max-width:767px){body .hero{min-height:0!important;height:auto!important;background-position:70% top!important;background-size:cover!important}body .hero>.wrap{padding-top:165px!important;padding-bottom:30px!important}body .hero h1{font-size:clamp(31px,8.2vw,39px)!important;line-height:1.1!important;margin-bottom:12px!important}body .hero p:not(.hero-proof){font-size:14px!important;margin-bottom:17px!important}body .hero .btn{min-height:48px!important}}
+@media(max-width:390px){body .hero>.wrap{padding-top:150px!important}body .hero h1{font-size:31px!important}}
