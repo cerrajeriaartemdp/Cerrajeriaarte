@@ -314,3 +314,8 @@ body .services-premium .service-bottom>p{margin-bottom:16px!important}
 body .services-premium .service-link{min-height:50px!important;padding:9px 8px 9px 11px!important;border:1px solid #356a4c!important;border-radius:12px!important;background:#173b2a!important;box-shadow:0 7px 16px rgba(15,54,32,.17)!important;font-size:10px!important;line-height:1.3!important;letter-spacing:0!important}
 body .services-premium .service-link span{display:grid!important;place-items:center!important;width:27px!important;height:27px!important;min-width:27px!important;border-radius:9px!important;background:#d4f6df!important;color:#174b30!important;border:0!important;font-size:17px!important}
 }
+
+/* Botones de servicios sin flechas, texto centrado */
+.services-premium .service-link{justify-content:center!important;text-align:center!important;padding:13px 16px!important}
+.services-premium .service-link span{display:none!important}
+@media(max-width:767px){body .services-premium .service-link{justify-content:center!important;text-align:center!important;padding:11px 9px!important}body .services-premium .service-link span{display:none!important}}
