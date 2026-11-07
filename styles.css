@@ -248,3 +248,10 @@ header .main-nav>a[href*="wa.me"]{grid-column:1/-1!important;grid-row:3!importan
 header .main-nav>a,header .main-nav>.nav-dropdown{min-height:48px!important;height:48px!important}
 header .main-nav>.nav-dropdown>.nav-parent,header .main-nav>a{font-size:10px!important;line-height:1.2!important}
 }
+
+/* Todos los ítems del menú móvil con el mismo rectángulo */
+@media(max-width:767px){
+header .main-nav>a,header .main-nav>.nav-dropdown{box-sizing:border-box!important;display:flex!important;align-items:center!important;justify-content:center!important;min-width:0!important;width:100%!important;min-height:48px!important;height:48px!important;padding:0 6px!important;margin:0!important;border:1px solid #314038!important;border-radius:7px!important;background:transparent!important;box-shadow:none!important}
+header .main-nav>a:last-child{background:transparent!important;color:white!important;border:1px solid #314038!important}
+header .main-nav>a,header .main-nav>.nav-dropdown>.nav-parent{color:white!important;font-size:10px!important;font-weight:800!important;line-height:1.2!important;text-align:center!important}
+}
