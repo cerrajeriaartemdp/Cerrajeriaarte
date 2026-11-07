@@ -274,3 +274,15 @@ body .hero .hero-proof{font-size:11px!important;line-height:1.5!important;margin
 /* Banner móvil compacto: texto más arriba, imagen sin ampliación extra */
 @media(max-width:767px){body .hero{min-height:0!important;height:auto!important;background-position:70% top!important;background-size:cover!important}body .hero>.wrap{padding-top:165px!important;padding-bottom:30px!important}body .hero h1{font-size:clamp(31px,8.2vw,39px)!important;line-height:1.1!important;margin-bottom:12px!important}body .hero p:not(.hero-proof){font-size:14px!important;margin-bottom:17px!important}body .hero .btn{min-height:48px!important}}
 @media(max-width:390px){body .hero>.wrap{padding-top:150px!important}body .hero h1{font-size:31px!important}}
+
+/* Banner móvil: cerradura completa y texto arriba a la derecha */
+@media(max-width:767px){
+body .hero{height:auto!important;min-height:440px!important;display:flex!important;align-items:flex-start!important;background-color:#090e0c!important;background-image:linear-gradient(180deg,rgba(9,14,12,.65) 0%,rgba(9,14,12,.22) 38%,rgba(9,14,12,.12) 70%,#090e0c 100%),url('https://cerrajeriaartemdp.wordpress.com/wp-content/uploads/2026/11/a_high_resolution_professional_product_architectu.png')!important;background-size:100% 100%,contain!important;background-position:center center,center bottom!important;background-repeat:no-repeat!important}
+body .hero>.wrap{width:calc(100% - 30px)!important;max-width:560px!important;box-sizing:border-box!important;padding:28px 0 185px!important;text-align:right!important;display:flex!important;flex-direction:column!important;align-items:flex-end!important}
+body .hero .eyebrow{font-size:9px!important;margin:0 0 9px!important;text-align:right!important}
+body .hero h1{max-width:310px!important;font-size:clamp(29px,7.5vw,37px)!important;line-height:1.07!important;margin:0 0 9px!important;text-align:right!important}
+body .hero p:not(.hero-proof){max-width:290px!important;font-size:12px!important;line-height:1.4!important;margin:0 0 12px!important;text-align:right!important}
+body .hero .btn{width:auto!important;max-width:300px!important;min-height:42px!important;padding:10px 13px!important;font-size:11px!important;text-align:center!important}
+body .hero .hero-proof{font-size:10px!important;margin:9px 0 0!important;text-align:right!important}
+}
+@media(max-width:390px){body .hero>.wrap{padding-top:24px!important;padding-bottom:165px!important}body .hero h1{font-size:29px!important;max-width:270px!important}}
