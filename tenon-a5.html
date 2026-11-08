@@ -1,4 +1,23 @@
 <!doctype html><html lang="es"><head>
+<!-- Meta Pixel: opt-in para seguimiento publicitario -->
+<style id="meta-consent-style">#meta-consent-banner{position:fixed;bottom:12px;left:12px;right:12px;z-index:2147483000;max-width:520px;margin:auto;background:#17191d;color:#fff;padding:16px;border-radius:14px;box-shadow:0 8px 32px #0006;font:14px/1.5 Arial,sans-serif}#meta-consent-banner button{border:0;border-radius:8px;padding:10px 14px;font-weight:600;cursor:pointer}#meta-consent-banner .meta-accept{background:#25d366;color:#07190c}#meta-consent-banner .meta-reject{background:#444;color:white}#meta-consent-banner .meta-actions{display:flex;gap:8px;margin-top:12px}</style>
+<script>
+(function(){
+var key='arte_meta_ads_consent_v1';
+function startMeta(){
+ if(window.fbq)return;
+ !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init','2214387076183284');fbq('track','PageView');
+ if(/^tenon-(a2|a5|k9|t10|t15)\.html$/.test(location.pathname.split('/').pop()))fbq('track','ViewContent',{content_name:location.pathname.split('/').pop().replace('.html',''),content_category:'cerradura_inteligente'});
+ document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';if(/^(https?:\/\/)?(wa\.me|api\.whatsapp\.com|web\.whatsapp\.com)\//i.test(h))fbq('track','Contact',{content_name:location.pathname.split('/').pop()||'inicio'});});
+}
+function choice(v){try{localStorage.setItem(key,v)}catch(e){}var b=document.getElementById('meta-consent-banner');if(b)b.remove();if(v==='accepted')startMeta();}
+function banner(){if(document.getElementById('meta-consent-banner'))return;var b=document.createElement('div');b.id='meta-consent-banner';b.setAttribute('role','dialog');b.setAttribute('aria-label','Preferencias de publicidad');b.innerHTML='<div><strong>Privacidad y anuncios</strong></div><div>¿Aceptás el uso del píxel de Meta para medir visitas y mejorar nuestros anuncios en Facebook e Instagram? Podés continuar sin aceptarlo.</div><div class="meta-actions"><button type="button" class="meta-accept">Aceptar</button><button type="button" class="meta-reject">Rechazar</button></div>';document.body.appendChild(b);b.querySelector('.meta-accept').addEventListener('click',function(){choice('accepted')});b.querySelector('.meta-reject').addEventListener('click',function(){choice('rejected')});}
+var saved;try{saved=localStorage.getItem(key)}catch(e){}if(saved==='accepted')startMeta();else if(saved!=='rejected'){if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',banner);else banner();}
+})();
+</script>
+<!-- Fin Meta Pixel -->
+
 <!-- Google Analytics 4: medicion de consultas por WhatsApp -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1PNN78RW3"></script>
 <script>
