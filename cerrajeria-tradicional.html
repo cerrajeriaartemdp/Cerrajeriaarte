@@ -1,4 +1,23 @@
 <!doctype html><html lang="es"><head>
+<!-- Google Analytics 4: Cerrajería Arte -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1PNN78RW3"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-D1PNN78RW3');
+document.addEventListener('click',function(e){
+  var link=e.target.closest('a[href]');
+  if(!link)return;
+  var href=link.getAttribute('href')||'';
+  if(!/^(https?:\/\/)?(wa\.me|api\.whatsapp\.com|web\.whatsapp\.com)\//i.test(href))return;
+  var path=location.pathname;
+  var section=path.includes('cerrajeria-tradicional')?'cerrajeria_tradicional':path.includes('cerraduras')?'cerraduras_inteligentes':path==='/'||path.endsWith('/index.html')?'inicio':'otras_paginas';
+  gtag('event','whatsapp_click',{page_section:section,link_url:link.href,link_text:(link.textContent||link.getAttribute('aria-label')||'').trim().slice(0,100)});
+});
+</script>
+<!-- End Google Analytics 4 -->
+
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5646B5HM');</script>
 <!-- End Google Tag Manager -->
